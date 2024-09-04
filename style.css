@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: monospace;
+}
+
+body,
+.player {
+    background-color: #414141;
+}
+
+.player {
+    border: #5a5a5a 1px dotted;
+}
+
+.computer {
+    background-color: #f0f0f0;
+    border: #999 5px solid;
+}
+
+#game-board {
+    background-color: #c4cfa3;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(4, 20px);
+    grid-template-rows: repeat(auto-fill, 20px);
+    column-gap: 5px;
+}
+
+.game-board-1 {
+    border: #595f43 solid 10px;
+}
+
+.scores {
+    max-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#instruction-text {
+    position: absolute;
+    top: 40%;
+    color: #333;
+    width: 60vw;
+    text-align: center;
+    margin: 0;
+}
